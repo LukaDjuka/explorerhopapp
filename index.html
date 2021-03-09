@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explorer Hop Application</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <header>
+            <h1>Box Attributes</h1>
+        </header>
+        <main>
+            <h2>Please enter attributes of the box below</h2>
+            <p>Box size is restricted to ensure proper display on screen
+                <br>
+                An improper input will revert the box to its default parameter for that attribute 
+                <br>
+                Default attributes are shown as placeholder text 
+            </p>
+            <div id="attribute-selection">
+                <label for="width">Width:
+                    <input type="text" id="width" name="width" placeholder="100px">
+                </label>
+                <label for="height">Height:
+                    <input type="text" id="height" name="height" placeholder="100px">
+                </label>
+                <label for="Colour">Colour:
+                    <input type="text" id="colour" name="colour" placeholder="black">
+                </label>
+                <div id="button-div">
+                    <input id="apply-button" type="button" value="Apply">
+                </div>
+            </div>
+
+            <div id="box-holder">
+                <div id="box"></div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
